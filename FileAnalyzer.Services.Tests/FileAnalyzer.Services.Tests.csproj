@@ -44,17 +44,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileReaderServiceTests.cs" />
+    <Compile Include="DataServiceTests.cs" />
+    <Compile Include="FileServiceTests.cs" />
+    <Compile Include="CSVReaderServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="TestFiles\data2.csv" />
+    <None Include="TestFiles\wrongdata2.csv" />
+    <None Include="TestFiles\wrongdata.csv" />
+    <None Include="TestFiles\data3lines1empty.csv" />
+    <None Include="TestFiles\data5lines2empty.csv" />
+    <None Include="TestFiles\data5lines.csv" />
+    <None Include="TestFiles\data2lines.csv" />
+    <None Include="TestFiles\data.csv" />
+    <None Include="TestFiles\emptyfile.csv" />
+    <None Include="TestFiles\invalidFileType" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FileAnalyzer.Services\FileAnalyzer.Services.csproj">
       <Project>{64a32d56-9358-484b-acf8-3edf883f8140}</Project>
       <Name>FileAnalyzer.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestFiles\invalidFileType.bmp" />
+    <Content Include="TestFiles\invalidFileType.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

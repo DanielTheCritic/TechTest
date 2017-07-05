@@ -20,9 +20,31 @@ namespace FileAnalyzer
     /// </summary>
     public partial class MainWindow : Window
     {
+        public MainWindowViewModel ViewModel { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            ViewModel = new MainWindowViewModel();
+            this.DataContext = ViewModel;
+        }
+
+        private void btnUseSampleFile_Click(object sender, RoutedEventArgs e)
+        {
+            ViewModel.UseSampleFile();
+        }
+
+        private void btnBrowse_Click(object sender, RoutedEventArgs e)
+        {
+            ViewModel.BrowseFile();
+        }
+
+        private void btnChangeOutput_Click(object sender, RoutedEventArgs e)
+        {
+            ViewModel.ChangeOutputDirectory();
         }
     }
 }

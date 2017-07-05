@@ -40,8 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\FileEntry.cs" />
-    <Compile Include="FileReaderService.cs" />
+    <Compile Include="DataService.cs" />
+    <Compile Include="Domain\Constants.cs" />
+    <Compile Include="Domain\FileAnalyzerException.cs" />
+    <Compile Include="Domain\Entry.cs" />
+    <Compile Include="CSVReaderService.cs" />
+    <Compile Include="FileService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
