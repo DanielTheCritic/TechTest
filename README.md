@@ -17,7 +17,3 @@ It processes the contents of the CSV file and exports them into 2 files that con
 ## Authors
 
 * **Daniel Sansom** [DanielTheCritic](https://github.com/DanielTheCritic)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
